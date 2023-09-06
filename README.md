@@ -1,8 +1,8 @@
 # DefacePage Documentation [ Made with HTML/CSS/JS ]
 
-**Live Preview:** [https://gh0sth4cker.github.io/DefacePage/](https://gh0sth4cker.github.io/DefacePage/)
+**Live Preview:** [Github Page](https://gh0sth4cker.github.io/DefacePage/](https://gh0sth4cker.github.io/DefacePage/)
 
-<img src='(https://github.com/GH0STH4CKER/DefacePage/assets/62290930/bf169093-8589-48fa-bc56-97524da5449b' alt='screenshot' width="50%">
+<img src='https://github.com/GH0STH4CKER/DefacePage/assets/62290930/bf169093-8589-48fa-bc56-97524da5449b' alt='screenshot' width="50%">
 
 ## Installation
 
