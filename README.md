@@ -1,6 +1,6 @@
 # DefacePage Documentation [ Made with HTML/CSS/JS ]
 
-### **Watch Live Preview:** <a href='https://gh0sth4cker.github.io/DefacePage/' target='_blank'>Here</a>
+### **Watch Live Preview:** <a href='https://gh0sth4cker.github.io/DefacePage/' target="_blank">Here</a>
 
 <img src='https://github.com/GH0STH4CKER/DefacePage/assets/62290930/e3e4707b-000b-4b47-9764-efd635d1196b' alt='screenshot' width="50%">
 
