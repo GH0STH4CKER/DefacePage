@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Blinking Text</title>
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-	<style>
-	body {
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinking Text</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+    body {
         background-color: black;
         display: flex;
-        justify-content: flex-start; /* Move content to the left */
+        flex-direction: column; /* Set column layout for mobile mode */
         align-items: center;
         height: 100vh;
         margin: 0;
-  }
-	.blinking-text {
+    }
+
+    .asciiart {
+        font-size: 1rem;
+        white-space: pre;
+        margin-left: 20px; /* Add left margin to align with the left edge */
+    }
+
+    .blinking-text {
         font-size: 3rem;
         color: lime;
         font-family: 'Russo One', sans-serif;
         text-transform: uppercase;
         font-weight: bold;
         animation: blink 1s infinite;
-  }
-
-	.asciiart {
-		font-size: 1rem;
-		white-space: pre;
-		margin-left: 20px; /* Add left margin to align with the left edge */
-	}
+    }
 
     @keyframes blink {
         0%, 100% {
@@ -38,27 +39,37 @@
         }
     }
 
-	/* CSS to style the footer */
-	#footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+    /* CSS to style the footer */
+    #footer {
         background-color: transparent;
         color: white;
         text-align: left; /* Align text in the footer to the left */
         padding: 10px 0;
     }
+
     /* CSS for the marquee and its container */
     #mq-container {
         width: 100%;
         overflow: hidden;
     }
+
     #mq {
         white-space: nowrap;
         animation: marquee 20s linear infinite; /* Adjust the speed as needed */
         color: green;
         font-size: 22px;
+    }
+
+    /* Media query for mobile mode */
+    @media screen and (max-width: 768px) {
+        .asciiart {
+            margin-left: 0; /* Remove left margin for mobile mode */
+            margin-top: 20px; /* Add top margin for ASCII art in mobile mode */
+        }
+
+        .blinking-text {
+            margin-bottom: 20px; /* Add bottom margin for blinking text in mobile mode */
+        }
     }
 	</style>
 </head>
