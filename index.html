@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEFACED BY GHOST</title>
+    <title>Blinking Text</title>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <style>
     body {
         background-color: black;
         display: flex;
-        flex-direction: column; /* Set column layout for mobile mode */
+        justify-content: center;
         align-items: center;
         height: 100vh;
         margin: 0;
@@ -18,7 +18,6 @@
     .asciiart {
         font-size: 1rem;
         white-space: pre;
-        margin-left: 20px; /* Add left margin to align with the left edge */
     }
 
     .blinking-text {
@@ -41,9 +40,13 @@
 
     /* CSS to style the footer */
     #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
         background-color: transparent;
         color: white;
-        text-align: left; /* Align text in the footer to the left */
+        text-align: center;
         padding: 10px 0;
     }
 
@@ -62,8 +65,15 @@
 
     /* Media query for mobile mode */
     @media screen and (max-width: 768px) {
+        body {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         .asciiart {
-            margin-left: 0; /* Remove left margin for mobile mode */
+            font-size: 1rem;
+            white-space: pre;
+            margin-left: 20px; /* Add left margin for alignment */
             margin-top: 20px; /* Add top margin for ASCII art in mobile mode */
         }
 
